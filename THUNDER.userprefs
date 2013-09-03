@@ -1,0 +1,30 @@
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LauncherControl/WebAccess/RocketService.cs">
+    <Files>
+      <File FileName="LauncherControl/WebAccess/IRocketService.cs" Line="36" Column="10" />
+      <File FileName="LauncherControl/WebAccess/RocketService.cs" Line="41" Column="4" />
+      <File FileName="LauncherControl/HidApi/hidapi_structs.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/HidApi/NativeHidApiLibAdapter.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherCodes/LauncherCommands.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/Main.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/TimedCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/USBMissileLauncher.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/HidApi/USBDevice.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/LeftCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/RightCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/UpCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/DownCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/FireCommand.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherCodes/LauncherState.cs" Line="1" Column="1" />
+      <File FileName="LauncherControl/LauncherControl/StopCommand.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/ganjalf/thunder/LauncherControl/USBDevice.cs" line="15" />
+      <Breakpoint file="/home/ganjalf/thunder/LauncherControl/USBMissileLauncher.cs" line="149" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

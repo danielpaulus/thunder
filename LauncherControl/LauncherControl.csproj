@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACDF9A6A-20BB-4FE3-8DD9-DE08616E10AE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LauncherControl</RootNamespace>
+    <AssemblyName>LauncherControl</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="LibUsbDotNet">
+      <HintPath>..\usblibmono\LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="USBMissileLauncher.cs" />
+    <Compile Include="HidApi\NativeHidApiLibAdapter.cs" />
+    <Compile Include="HidApi\USBDevice.cs" />
+    <Compile Include="LauncherCodes\Command.cs" />
+    <Compile Include="LauncherCodes\LauncherCommands.cs" />
+    <Compile Include="HidApi\hidapi_structs.cs" />
+    <Compile Include="HidApi\DeviceNotConnectedException.cs" />
+    <Compile Include="LauncherCodes\LauncherState.cs" />
+    <Compile Include="LauncherControl\TimedCommand.cs" />
+    <Compile Include="LauncherControl\FireCommand.cs" />
+    <Compile Include="LauncherControl\StopCommand.cs" />
+    <Compile Include="WebAccess\RocketService.cs" />
+    <Compile Include="WebAccess\IRocketService.cs" />
+    <Compile Include="LauncherControl\LeftCommand.cs" />
+    <Compile Include="LauncherControl\RightCommand.cs" />
+    <Compile Include="LauncherControl\UpCommand.cs" />
+    <Compile Include="LauncherControl\DownCommand.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="HidApi\" />
+    <Folder Include="LauncherCodes\" />
+    <Folder Include="LauncherControl\" />
+    <Folder Include="WebAccess\" />
+  </ItemGroup>
+</Project>

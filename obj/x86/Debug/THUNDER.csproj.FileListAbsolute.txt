@@ -1,0 +1,5 @@
+C:\thunder\bin\Debug\THUNDER.exe
+C:\thunder\bin\Debug\THUNDER.pdb
+C:\thunder\bin\Debug\USBLib.DLL
+C:\thunder\obj\x86\Debug\THUNDER.exe
+C:\thunder\obj\x86\Debug\THUNDER.pdb
